@@ -1,7 +1,5 @@
 rootProject.name = 'spring-room-escape'
 
 include 'storage:db-core'
-findProject(':storage:db-core')?.name = 'db-core'
 include 'core:core-api'
-findProject(':core:core-api')?.name = 'core-api'
 
