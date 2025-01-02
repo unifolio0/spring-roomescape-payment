@@ -1,26 +1,13 @@
-plugins {
-    id 'org.springframework.boot' version '3.2.4'
-    id 'io.spring.dependency-management' version '1.1.4'
-    id 'java'
-}
-
-group = 'nextstep'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
-
-repositories {
-    mavenCentral()
-}
+bootJar.enabled = true
+jar.enabled = false
 
 dependencies {
+    implementation project(":storage:db-core")
+
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.rest-assured:rest-assured:5.3.1'
-}
-
-test {
-    useJUnitPlatform()
 }

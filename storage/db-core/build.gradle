@@ -1,20 +1,5 @@
-plugins {
-    id 'java'
-}
-
-group = 'nextstep'
-version = '0.0.1-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
 
     runtimeOnly 'com.h2database:h2'
-}
-
-test {
-    useJUnitPlatform()
 }
