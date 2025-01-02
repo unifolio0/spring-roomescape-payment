@@ -1,4 +1,4 @@
-package roomescape.springboot.db.core;
+package roomescape.springboot;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
